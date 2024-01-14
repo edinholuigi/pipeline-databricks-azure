@@ -13,7 +13,14 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Repos/elisangelarozana2@outlook.com/pipeline-databricks-azure/Notebooks/InboundToBronze"
+				},
+				"linkedServiceName": {
+					"referenceName": "DatabricksDfactoryLink",
+					"type": "LinkedServiceReference"
+				}
 			},
 			{
 				"name": "IngestaoCamadaSilver",
@@ -33,7 +40,14 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Repos/elisangelarozana2@outlook.com/pipeline-databricks-azure/Notebooks/BronzeToSilver"
+				},
+				"linkedServiceName": {
+					"referenceName": "DatabricksDfactoryLink",
+					"type": "LinkedServiceReference"
+				}
 			}
 		],
 		"annotations": []
